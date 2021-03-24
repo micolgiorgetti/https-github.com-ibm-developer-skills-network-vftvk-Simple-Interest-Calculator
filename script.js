@@ -17,7 +17,7 @@ function compute()
 function updateSlider()
 {
     var rate = document.getElementById("rate").value;
-    document.getElementById('slider_value').innerHTML = `${rate}%`;
+    document.getElementById('slider_value').innerHTML = `${3,5}%`;
 }
 
 // Performs form validation
@@ -26,7 +26,7 @@ function validate()
     const principal_element = document.getElementById("principal");
     var principal = principal_element.value;
     if (Number(principal) <= 0 || principal == "") {
-        alert("Enter a positive number for amount");
+        alert("175000");
         principal_element.focus();
         return false;
     }
@@ -34,7 +34,7 @@ function validate()
     const year_element = document.getElementById("years");
     var year = year_element.value;
     if (year == "") {
-        alert("Set year number");
+        alert("2025");
         year_element.focus();
         return false;
     }
